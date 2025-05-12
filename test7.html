@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid실습</title>
+    <style>
+        #all{
+            display: grid;
+            grid-template-columns: 1fr 2fr 2fr 1fr;
+            grid-template-rows: 1fr 2fr 1fr;
+            text-align: center;
+        }
+        .a{
+            grid-column-start: 1;
+            grid-column-end: 6;
+            background-color: #F94144;
+        }
+        .b{
+            grid-row-start: 2;
+            grid-row-end: 4;
+            background-color: #F3722C;
+        }
+        .c{
+            grid-row-start: 2;
+            grid-row-end: 3;
+            grid-column-start: 2;
+            grid-column-end: 5;
+            background-color: #F9C74F;
+        }
+        .d{
+            grid-column-start: 5;
+            grid-column-end: 6;
+            grid-row-start: 2;
+            grid-row-end: 4;
+            background-color: #43AA8B;
+        }
+        .e{
+            grid-column-start: 2;
+            grid-column-end: 3;
+            grid-row-start: 3;
+            grid-row-end: 4;
+            background-color: #F8961E;
+        }
+        .f{
+            grid-column-start: 3;
+            grid-column-end: 5;
+            grid-row-start: 3;
+            grid-row-end: 4;
+            background-color: #9CBE6D;
+        }
+        .g{
+            grid-column-start: 1;
+            grid-column-end: 6;
+            grid-row-start: 4;
+            grid-row-end: 5;
+            background-color: #4444FF;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div id="all">
+        <div class="a" >#F94144</div>
+        <div class="b">#F3722C</div>
+        <div class="c">#F9C74F</div>
+        <div class="d">#43AA8B</div>
+        <div class="e">#F8961E</div>
+        <div class="f">#9CBE6D</div>
+        <div class="g">#4444FF</div>
+    </div>
+</body>
+</html>
